@@ -84,6 +84,7 @@ function! s:NextColor(how, echo_color)
     endif
     try
       execute 'colorscheme '.s:mycolorschemes[current]
+      execute 'airline_theme '.s:mycolorschemes[current]
       break
     catch /E185:/
       call add(missing, s:mycolorschemes[current])
@@ -116,8 +117,9 @@ function! s:HourColor()
   else
     let i = 4
   endif
-  let nowcolors = 'elflord morning desert evening pablo'
+  let nowcolors = 'asciiville everforest asciiville everforest asciiville'
   execute 'colorscheme '.split(nowcolors)[i]
+  execute 'airline_theme '.split(nowcolors)[i]
   redraw
   echo g:colors_name
 endfunction

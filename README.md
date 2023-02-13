@@ -15,3 +15,5 @@ Install via vim-plug:
 Override list of colorschemes through which to cycle:
 
     let g:mycolorschemes = ['asciiville', 'everforest', 'slate']
+
+Sets the Airline theme to the same colorscheme
