@@ -19,7 +19,7 @@ let loaded_setcolors = 1
 if exists('g:mycolorschemes')
   let s:mycolorschemes = g:mycolorschemes
 else
-  let s:mycolorschemes = ['asciiville', 'everforest', 'slate', 'torte', 'darkblue', 'delek', 'murphy', 'elflord', 'pablo', 'koehler']  " colorscheme names that we use to set color
+  let s:mycolorschemes = ['asciiville', 'everforest', 'cool', 'desertink', 'distinguished', 'hybrid', 'luna', 'molokai', 'solarized', 'zenburn']
 endif
 
 " Set list of color scheme names that we will use, except
@@ -117,7 +117,7 @@ function! s:HourColor()
   else
     let i = 4
   endif
-  let nowcolors = 'asciiville everforest asciiville everforest asciiville'
+  let nowcolors = 'asciiville everforest cool desertink solarized'
   execute 'colorscheme '.split(nowcolors)[i]
   execute 'AirlineTheme '.split(nowcolors)[i]
   redraw
