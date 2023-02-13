@@ -19,7 +19,7 @@ let loaded_setcolors = 1
 if exists('g:mycolorschemes')
   let s:mycolorschemes = g:mycolorschemes
 else
-  let s:mycolorschemes = ['asciiville' 'everforest' 'slate', 'torte', 'darkblue', 'delek', 'murphy', 'elflord', 'pablo', 'koehler']  " colorscheme names that we use to set color
+  let s:mycolorschemes = ['asciiville', 'everforest', 'slate', 'torte', 'darkblue', 'delek', 'murphy', 'elflord', 'pablo', 'koehler']  " colorscheme names that we use to set color
 endif
 
 " Set list of color scheme names that we will use, except
