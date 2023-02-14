@@ -10,8 +10,18 @@ Install via [vim-plug](https://github.com/junegunn/vim-plug):
 
     Plug 'doctorfree/setcolors.vim'
 
-Override list of colorschemes through which to cycle:
+Default list of colorschemes through which to cycle:
 
-    let g:mycolorschemes = ['asciiville', 'everforest', 'cool', 'desertink', 'distinguished', 'hybrid', 'luna', 'molokai', 'solarized', 'zenburn']
+    ['asciiville', 'everforest', 'cool', 'desertink', 'distinguished', 'hybrid', 'luna', 'molokai', 'solarized', 'zenburn']
+
+Override list of colorschemes through which to cycle, for example:
+
+    let g:mycolorschemes = ['asciiville', 'everforest', 'cool', 'desertink']
 
 Sets the Airline theme to the same colorscheme
+
+Cycle through colorschemes and airline themes using the default key bindings:
+
+    <F8>   Next colorscheme and airline theme
+    <S-F8> Previous colorscheme and airline theme
+    <M-F8> Random colorscheme and airline theme
