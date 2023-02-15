@@ -1,9 +1,9 @@
 " Change the color scheme from a list of color scheme names.
 " Version 2010-09-12 from http://vim.wikia.com/wiki/VimTip341
 " Press key:
-"   F8                next scheme
-"   Shift-F8          previous scheme
-"   Alt-F8            random scheme
+"   F7          previous scheme
+"   F8          next scheme
+"   F9          random scheme
 " Set the list of color schemes used by the above (default is 'all'):
 "   :SetColors all              (all $VIMRUNTIME/colors/*.vim)
 "   :SetColors my               (names built into script)
@@ -99,9 +99,9 @@ function! s:NextColor(how, echo_color)
   endif
 endfunction
 
+nnoremap <F7> :call NextColor(-1)<CR>
 nnoremap <F8> :call NextColor(1)<CR>
-nnoremap <S-F8> :call NextColor(-1)<CR>
-nnoremap <A-F8> :call NextColor(0)<CR>
+nnoremap <F9> :call NextColor(0)<CR>
 
 " Set color scheme according to current time of day.
 function! s:HourColor()

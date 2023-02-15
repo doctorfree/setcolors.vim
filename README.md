@@ -22,6 +22,6 @@ Sets the Airline theme to the same colorscheme
 
 Cycle through colorschemes and airline themes using the default key bindings:
 
-    <F8>   Next colorscheme and airline theme
-    <S-F8> Previous colorscheme and airline theme
-    <M-F8> Random colorscheme and airline theme
+    <F7> Previous colorscheme and airline theme
+    <F8> Next colorscheme and airline theme
+    <F9> Random colorscheme and airline theme
