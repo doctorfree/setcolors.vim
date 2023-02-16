@@ -37,6 +37,13 @@ key mappings:
     <F8> Next colorscheme and airline theme
     <F9> Random colorscheme and airline theme
 
+For example, when `<F8>` is pressed the next colorscheme in the list is used. 
+Note that both the Neovim colorscheme and the Airline theme are set. These
+two color schemes need to be coordinated to provide proper contrast and
+readability. The default colorschemes above take care of this. If you change
+the `mycolorschemes` global variable make sure to use color schemes with
+compatible [Airline themes](https://github.com/vim-airline/vim-airline-themes).
+
 Set the list of color schemes used by the above (default is 'all'):
 
 ```vim
