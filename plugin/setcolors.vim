@@ -1,14 +1,14 @@
 " Change the color scheme from a list of color scheme names.
-" Version 2010-09-12 from http://vim.wikia.com/wiki/VimTip341
+" Also changes the corresponding Airline theme.
 " Press key:
 "   F7          previous scheme
 "   F8          next scheme
 "   F9          random scheme
 " Set the list of color schemes used by the above (default is 'all'):
-"   :SetColors all              (all $VIMRUNTIME/colors/*.vim)
-"   :SetColors my               (names built into script)
-"   :SetColors blue slate ron   (these schemes)
-"   :SetColors                  (display current scheme names)
+"   :SetColors all                     (all $VIMRUNTIME/colors/*.vim)
+"   :SetColors my                      (names built into script)
+"   :SetColors asciiville everforest   (these schemes)
+"   :SetColors                         (display current scheme names)
 " Set the current color scheme based on time of day:
 "   :SetColors now
 if v:version < 700 || exists('loaded_setcolors') || &cp
